@@ -35,7 +35,10 @@
     e.g logData('hello', 'how', 'are', 'you?')  // hello how are you?
     FUN FACT: console.log() is implemented in a similar manner, try `console.log('hello', 'how', 'are', 'you?')`
     */
-    //ENTER YOUR CODE HERE
+    function logData(...str) {
+      console.log(str.join(' '));
+    }
+    logData('hello', 'how', 'are', 'you?');
 
     /*
     PROBLEM 4: Create a function "prefixer" that receives a string as an argument passed from the FIRST parameter "prefix" and any number of extra string arguments.
