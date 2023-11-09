@@ -45,25 +45,30 @@
     This function should return a list containing all the extra arguments with the prefix attached to the beginning. If there are no extra arguments, return an empty array
     e.g prefixer(un, 'opposed', 'ashamed') returns ['unopposed', 'unashamed']
     */
-    //ENTER YOUR CODE HERE
+    function prefixer(prefix) {
+      for (let i = 1; i < arguments.length - 1; i++) {
+        return arguments[0] + arguments[i];
+      }
+    }
+    console.log(prefixer('un', 'opposed', 'ashamed'));
 
     /*
     PROBLEM 5 (DEBUGGING): Fix the issue(s) with the code below
     */
     // UNCOMMENT CODE
-    // const min = () => {
-    //   let min = arguments[0];
-    //
-    //   for (let i = 1; i < arguments.length; i++){
-    //     if (arguments[i] < min){
-    //       min = arguments[i];
-    //     }
-    //   }
-    //
-    //   return min;
-    // }
-    //
-    // console.log(min(3, 2, 7));
+    const min = () => {
+      let min = arguments[0];
+    
+      for (let i = 1; i < arguments.length; i++){
+        if (arguments[i] < min){
+          min = arguments[i];
+        }
+      }
+    
+      return min;
+    }
+    
+    console.log(min(3, 2, 7));
 
   </script>
   <section
